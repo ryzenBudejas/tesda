@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+  <div class="navbar-fixed">
+    <nav class="nav-extended">
+        <div class="nav-wrapper deep-purple">
+          <a href="#" class="brand-logo"><i class="fa fa-angellist" style="margin-left:10px"></i></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+        </div>
+        <div class="nav-content deep-purple">
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a href="#test1">Test 1</a></li>
+            <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+            <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+            <li class="tab"><a href="#test4">Test 4</a></li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+      <br>
+    <div class="container">
+
+
+        <h3 class="deep-purple-text text-lighten-2">Fixed Navbar</h3>
+        <p>To make the navbar fixed, you have to add an outer wrapping div with the class navbar-fixed. This will offset your other content while making your nav fixed. You can adjust the height of this outer div to change how much offset is on your content.</p>
+       
+        <h3 class="deep-purple-text text-lighten-2">Navbar Dropdown Menu</h3>
+        <p>To add a navbar dropdown menu, add the ul dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the data-target attribute of the dropdown trigger.</p>
+      
+          <nav>
+            <div class="nav-wrapper deep-purple">
+              <a href="#!" class="brand-logo"><i class="fa fa-angellist" style="margin-left:10px"></i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+              </ul>
+            </div>
+          </nav>
+          <ul id="dropdown1" class="dropdown-content ">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+          </ul>
+
+          <h3 class="deep-purple-text text-lighten-2">Icon Links</h3>
+         
+          </p>
+          <nav>
+            <div class="nav-wrapper deep-purple">
+              <a href="#!" class="brand-logo"><i class="fa fa-angellist" style="margin-left:10px"></i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+                <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+                <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+                <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+              </ul>
+            </div>
+          </nav>  
+          <p>You can add icons into links. For icon only links you don't need any additional class. Just pop the i tag in and it will work.
+            <nav>
+                <div class="nav-wrapper deep-purple">
+                  <a href="#!" class="brand-logo"><i class="fa fa-angellist" style="margin-left:10px"></i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html"><i class="material-icons left">search</i>Link with Left Icon</a></li>
+                    <li><a href="badges.html"><i class="material-icons right">view_module</i>Link with Right Icon</a></li>
+                  </ul>
+                </div>
+              </nav>
+          <p>For adding an icon to a text link you need to add either a left or right class to the icon depending on where you want the icon to be.</p>
+    </div>
+
+</div>
+<footer class="page-footer deep-purple">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><i class="fa fa-facebook-official"  style="font-size:36px"></i></li>
+            <li><i class="fa fa-instagram"  style="font-size:36px"></i></li>
+            <li><i class="fa fa-twitter"  style="font-size:36px"></i></li>
+            <li><i class="fa fa-github"  style="font-size:36px"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2023 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+            <script>
+                $(".dropdown-trigger").dropdown();
+            </script>
+</body>
+</html>

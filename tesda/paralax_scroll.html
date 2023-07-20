@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <nav>
+      <div class="nav-wrapper grey darken-4 " style="padding-left: 80px;">
+        <a href="#" class="brand-logo deep-orange-text text-darken-1">Materialize CSS Activity</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down ">
+          <li ><a href="#scrollspy" class="deep-orange-text text-darken-1">ScrollSpy</a></li>
+          <li><a href="#datepicker" class="deep-orange-text text-darken-1">Datepicker</a></li>
+          <li><a href="#timepicker"class="deep-orange-text text-darken-1">Timepicker</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="parallax-container">
+      <div class="parallax"><img src="https://images.pexels.com/photos/2611691/pexels-photo-2611691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+    </div>
+    <div class="section grey darken-4">
+      <div class="row container 
+      ">
+        <h1 class="deep-orange-text text-darken-1">Harley Davidson</h1>
+        <p class="grey-text  text-lighten-5">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="https://images.pexels.com/photos/2611686/pexels-photo-2611686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+    </div>
+
+
+   
+    <div class="section grey darken-4">
+    <div id="scrollspy" class="container scrollspy">
+      <h2 class="deep-orange-text text-darken-1">ScrollSpy</h2>
+      <div class="divider"></div>
+      <p class="grey-text  text-lighten-5">Scrollspy is a jQuery plugin that tracks certain elements and which element the user's screen is currently centered on. Our main demo of this is our table of contents on every documentation page to the right. Clicking on these links will also scroll the page to that element.</p>
+    </div>
+
+    <div id="datepicker" class="container scrollspy">
+      <h2 class="deep-orange-text text-darken-1">Datepicker</h2>
+      <div class="divider"></div>
+      <input type="text" class="datepicker grey darken-2 orange-text text-darken-4" style=" text-align: center;     font-weight: bold;">
+    </div>
+    <div id="timepicker" class="container scrollspy">
+      <h2 class="deep-orange-text text-darken-1">Timepicker</h2>
+      <div class="divider"></div>
+      <input type="text" class="timepicker grey darken-2 orange-text text-darken-4" style=" text-align: center;     font-weight: bold;">
+    </div>
+  </div>
+  <div style="height: 1000px;"></div>
+</body>
+<script>
+    $(document).ready(function(){
+      $('.scrollspy').scrollSpy();
+    $('.parallax').parallax();
+    $('.datepicker').datepicker();
+    $('.timepicker').timepicker();
+  });
+</script>
+
+</html>

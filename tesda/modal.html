@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <div class="container">
+    <h1 class="deep-purple-text text-lighten-2">Modals</h1>
+
+  </div>
+
+  <div class="divider"></div>
+  <br>
+  <div class="container">
+    <p>Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the
+      modal to work you have to add the Modal ID to the link of the trigger. To add a close button, just add the class
+      .modal-close to your button.</p>
+    <br>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+  </div>
+
+  <div class="container">
+    <h2 class="deep-purple-text text-lighten-2">Modals with Fixed Footer</h2>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Modal</a>
+    <br>
+    <p>Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the
+      modal to work you have to add the Modal ID to the link of the trigger. To add a close button, just add the class
+      .modal-close to your button.</p>
+  </div>
+
+  <div class="container">
+    <h2 class="deep-purple-text text-lighten-2">Bottom Sheet Modals</h2>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Modal</a>
+    <br>
+    <p>Bottom Sheet Modals are good for displaying actions to the user on the bottom of a screen. They still act the same as regular modals.</p>
+
+
+  </div>
+  <br>
+
+
+
+  <div style="height:1000px"></div>
+
+
+  <!-- Modals  -->
+  <!-- start Modal1 -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Question</h4>
+      <div class="divider"></div>
+      <p>Do you Agree?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn">Agree</a>
+    </div>
+  </div>
+  <!-- end Modal1 -->
+
+  <!-- start Modal2 -->
+  <div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Question</h4>
+      <div class="divider"></div>
+      <p>Do you Agree?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn">Agree</a>
+    </div>
+  </div>
+
+  <!-- end Modal2 -->
+
+   <!-- start Modal3 -->
+   <div id="modal3" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Question</h4>
+      <div class="divider"></div>
+      <p>Do you Agree?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn">Agree</a>
+    </div>
+  </div>
+          
+
+  <!-- end Modal3 -->
+</body>
+<script>
+
+  $(document).ready(function () {
+    $('.modal').modal();
+
+  });
+</script>
+
+</html>

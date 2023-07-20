@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <nav>
+    <div class="nav-wrapper" style="padding-left: 80px;">
+      <a href="#" class="brand-logo">Materialize CSS Activity</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#structure">Structure</a></li>
+        <li><a href="#initialization">Intialization</a></li>
+      </ul>
+    </div>
+  </nav>
+        
+
+
+
+  <br>
+
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="https://images.pexels.com/photos/2611691/pexels-photo-2611691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+  </div>
+
+  <div id="introduction" class="section scrollspy">
+    <h1 class="deep-purple-text text-lighten-2">ScrollSpy</h1>
+  </div>
+</body>
+
+<script>
+
+$(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+    $('.parallax').scrollSpy();
+  });
+</script>
+</html>
